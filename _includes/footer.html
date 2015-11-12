@@ -1,0 +1,33 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; {{ site.title }} 2015</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
+          <!--li><a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a>
+          </li-->
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li><a href="{{ '/impressum' | prepend: site.baseurl }}">Impressum</a>
+          </li>
+          <li><a href="#">Datenschutz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>

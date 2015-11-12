@@ -1,0 +1,25 @@
+# Site settings
+title: tanzblick
+email: hallo@tanzblick.com
+description: >
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tanzblick.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: redcarpet
+encoding: utf-8
+permalinks: pretty
+permalink: /:year-:month-:day-:title
+
+# Build settings
+exclude:
+  - 'Rakefile'
+
+# Server settings
+port: 4000
+host: 0.0.0.0
+
+# settings for deployment (Rakefile)
+#git:
+#  repo: git@github.com:
+#  branch: master

@@ -1,0 +1,227 @@
+html,
+body,
+table {
+  font-size: 13pt;
+  line-height: 1.75;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $secondaryFont;
+  color: color(copy);
+}
+
+.tanz {
+  color: color(dance-blue);
+  font-style: normal;
+}
+
+.text-muted {
+  color: color(muted);
+}
+
+.text-primary {
+  color: color(primary);
+}
+
+p {
+  line-height: 1.75;
+}
+
+p.large {
+  font-size: 1.2rem;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+  text-decoration: none;
+}
+
+a {
+  color: color(primary);
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: color(primary, light);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: color(primary);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: $primaryFont;
+  font-weight: 700;
+  color: color(headings);
+
+  a {
+    color: inherit;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: color(dance-blue);
+  }
+}
+
+
+
+.btn-primary {
+  border-color: color(primary);
+  text-transform: uppercase;
+  font-family: $primaryFont;
+  font-weight: 700;
+  color: color(dance-snow);
+  background-color: color(primary);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open &.dropdown-toggle {
+    border-color: color(primary);
+    color: color(dance-snow);
+    background-color: color(secondary);
+  }
+  &:active,
+  &.active,
+  .open &.dropdown-toggle {
+    background-image: none;
+  }
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  border-color: color(primary);
+  background-color: color(primary);
+}
+
+.btn-primary .badge {
+  color: color(primary);
+  background-color: color(dance-snow);
+}
+
+.btn-xl {
+  padding: 1.2em 2.5em;
+  border-color: color(primary);
+  border-radius: .2em;
+  text-transform: uppercase;
+  font-family: $primaryFont;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: color(dance-snow);
+  background-color: color(primary);
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  border-color: color(primary);
+  color: color(dance-snow);
+  background-color: color(secondary);
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  border-color: color(primary);
+  background-color: color(primary);
+}
+
+.btn-xl .badge {
+  color: color(primary);
+  background-color: color(dance-snow);
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: 0;
+}
+
+a.fa-stack:hover {
+  .fa {
+    color: color(light-muted);
+  }
+  .fa-inverse {
+    color: color(dance-blue);
+  }
+}
+
+
+.bullet-icon {
+  $size: 1.8em;
+  position: relative;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  line-height: $size;
+  vertical-align: middle;
+  font-size: 4em;
+  border-radius: 50%;
+  background-color: color(dance-blue);
+  color: color(dance-snow);
+  border: .1em solid transparent;
+  margin: .1em;
+  transition: all .5s;
+
+  a:hover & {
+    color: color(dance-blue);
+    background-color: color(dance-snow);
+    border-color: color(dance-blue);
+
+  }
+}

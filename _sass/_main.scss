@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+$colors: (
+  dance-blue: #2c2cbb,
+  primary: dance-blue, //#fed136,
+  secondary: #0c0cbb, //#fec503,
+  secondary-dark: #333,
+  dance-snow: #ffffff,
+  muted: #777777,
+  copy: #555555,
+  headings: #333333,
+  light-muted: #dddddd
+);
+// this example uses https://github.com/heygrady/scss-blend-modes
+// which is a blast to generate color schemes with
+@import "https://raw.githubusercontent.com/heygrady/scss-blend-modes/master/stylesheets/_blend-modes.scss";
+@function color($key: lime, $variant: false) {
+  $cool-black : #0A0A33;
+  $color      : map-get($colors, $key) or $cool-black;
+  // Recursive check
+  $color: if(map-has-key($colors, $color), color($color), $color);
+
+  @if $variant == light {
+    $color: saturate(blend-screen(rgba(#fff, 0.4), $color), 25%);
+  }
+  @if $variant == dark {
+    $color: blend-multiply(rgba($cool-black, 0.5), $color);
+  }
+  @if $variant == darker {
+    $color: blend-multiply(rgba($cool-black, 0.85), $color);
+  }
+  @return $color;
+}
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+$primaryFont: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$secondaryFont: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+$serifFont: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+$secondaryFont:  $primaryFont;
+$serifFont: $primaryFont;
+
+@import
+  "partials/**/*";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "typography",
+  "navbar",
+  "footer",
+  "components",
+  "home/cover",
+  "home/portfolio",
+  "home/timeline"
+;
+
