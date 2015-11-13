@@ -1,0 +1,22 @@
+
+::-moz-selection {
+  text-shadow: none;
+  background: color(primary);
+}
+
+::selection {
+  text-shadow: none;
+  background: color(primary);
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}
+
+body {
+  webkit-tap-highlight-color: color(primary);
+}

@@ -1,0 +1,230 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<header class="cover home-cover">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">
+        {% include logo.svg %}
+
+        <a href="#projekte" class="page-scroll btn btn-xl">Mehr erfahren</a>
+    </div>
+  </div>
+</header>
+
+<!-- Portfolio Grid Section -->
+<section id="projekte" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading"><em class="tanz">Tanz</em>projekte</h2>
+        <h3 class="section-subheading text-muted">Auftragsarbeiten und eigene Produktionen</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'moving-moods_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Moving moods</h4>
+          <p class="text-muted">Tanz</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'getanzte-vesper_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Getanzte Vesper</h4>
+          <p class="text-muted">Tanz</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'feld_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Eröffnung „Feld“</h4>
+          <p class="text-muted">Tanz</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'tanzen_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Tanzen</h4>
+          <p class="text-muted">Tanz</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'bild_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>.</h4>
+          <p class="text-muted">.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!--a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div-->
+          <img src="{{ 'solo_thumb.jpg' | prepend: 'images/projekte/' | prepend: site.baseurl }}" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Soli</h4>
+          <p class="text-muted">Tanz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="vermittlung">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading"><em class="tanz">Tanz</em>vermittlung</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fa fa-bullhorn bullet-icon"></i>
+        <h4 class="service-heading">Unterricht</h4>
+        <p class="text-muted">Regulärer Unterricht an verschiedenen Einrichtungen in den Schwerpunkten: Ballett, Moderner Tanz, Tanz- und Bewegungstheater.</p>
+      </div>
+      <div class="col-md-4">
+        <a href="{{ '/tanz-in-schulen' | prepend: site.baseurl }}" class="">
+          <i class="bullet-icon fa fa-mortar-board"></i>
+          <h4 class="service-heading">Tanz in Schulen</h4>
+        </a>
+        <p class="text-muted">Kindergartentanzwoche, Schultheatertage, Tanz-AGs, Projekttage, Lehrerfortbildung.</p>
+      </div>
+      <div class="col-md-4">
+        <!--span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+        </span-->
+        <i class="fa fa-lightbulb-o bullet-icon"></i>
+        <h4 class="service-heading">Workshops</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Zur Person</h2>
+        <h3 class="section-subheading text-muted">Dorothée Bretz</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="{{ 'solotanz.jpg' | prepend: 'images/person/' | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Diplombühnentänzerin</h4>
+                <h4 class="subheading">Hochschule für Musik und Darstellende Kunst Frankfurt/Main</h4>
+              </div>
+              <div class="timeline-body">
+                <!--p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p-->
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="{{ 'lehrerin.jpg' | prepend: 'images/person/' | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Diplomsportlehrerin</h4>
+                <h4 class="subheading">Deutsche Sporthochschule Köln mit den Schwerpunktfächern Spiel-Musik-Tanz/ Bewegungstheater</h4>
+              </div>
+              <div class="timeline-body">
+                <!--p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p-->
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="{{ 'tanz-in-schulen.jpg' | prepend: 'images/person/' | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Elementarer Tanz und Mastermodul Tanz in Schulen</h4>
+                <h4 class="subheading">Deutsche Sporthochschule Köln &amp; Hochschule für zeitgenössischen Tanz, Köln</h4>
+              </div>
+              <div class="timeline-body">
+                <!--p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p-->
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="{{ 'freischaffend.jpg' | prepend: 'images/person/' | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Freischaffende Tätigkeit</h4>
+                <h4 class="subheading">In den Bereichen Tanzperformance, Tanzpädagogik, Choreographie und Konzeptentwicklung</h4>
+              </div>
+              <div class="timeline-body">
+                <!--p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p-->
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>Be Part
+                <br>Of Our
+                <br>Story!</h4>
+            </div>
+          </li>
+        </ul-->
+      </div>
+    </div>
+  </div>
+</section>

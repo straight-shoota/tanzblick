@@ -1,0 +1,175 @@
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+  font-size: .8rem;
+}
+
+.navbar-default .navbar-brand {
+  color: color(primary);
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: .2em;
+  /*background: rgba(240,240,240,.7);
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;*/
+
+  &:hover,
+  &:focus {
+    //background: rgba(240,240,240,.9);
+  }
+
+  > svg {
+    max-width: 6em;
+    height: 40px;
+
+    .tanzblick-blick {
+      fill: color(dance-snow);
+    }
+  }
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: color(secondary);
+}
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: color(primary);
+  background-color: color(primary);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: color(dance-snow);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: color(primary);
+}
+
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: $primaryFont;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: color(dance-snow);
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: color(primary);
+}
+
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #fff;
+  background-color: color(primary);
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff !important; // FIXME: somehow specifitiy is not enough...
+  background-color: color(secondary);
+}
+
+@media(min-width:768px) {
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.3), transparent);
+    background: linear-gradient(to bottom, rgba(0,0,0,.1), transparent);
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 1.5em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-default .navbar-nav>.active>a {
+    border-radius: 3px;
+  }
+
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: #333;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-default:not(.navbar-shrink) {
+    .nav .a {
+      color: #333;
+    }
+    .navbar-brand {
+      opacity: 0;
+    }
+  }
+  .navbar-default.navbar-shrink .nav a {
+    color: #fff;
+    &:hover,
+    &:focus {
+      color: #999;
+    }
+  }
+}
+
+.logo-brand {
+  line-height: 1;
+  text-transform: none;
+  > em {
+    color: color(dance-blue);
+    font-family: "Gloria Hallelujah", sans-serif;
+    text-shadow: 2px 2px color(dance-blue);
+    > i {
+      display: inline-block;
+    }
+    :nth-child(1) {
+      font-size: 1.42em;
+      transform: scaleX(.9) rotate(8deg);
+      letter-spacing: -.2em;
+    }
+    :nth-child(2) {
+      transform: translateY(.2em) rotate(2deg);
+      letter-spacing: .05em;
+    }
+    :nth-child(3) {
+      transform: translateY(.05em);
+    }
+    :nth-child(4) {
+      transform: translateY(.2em);
+      position: relative;
+      &::after {
+        content: "";
+        background: linear-gradient(to right, color(dance-blue), transparent);
+        width: 3em;
+        height: .09em;
+        position: absolute;
+        bottom: .12em;
+        margin-left: -.01em;
+      }
+    }
+  }
+  > span {
+    color: #fff;
+    font-family: "Montserrat", "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+}

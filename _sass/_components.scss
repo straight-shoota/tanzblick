@@ -1,0 +1,35 @@
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: $serifFont;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+#vermittlung p {
+  font-size: .8rem;
+}
