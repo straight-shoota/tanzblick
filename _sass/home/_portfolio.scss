@@ -1,14 +1,14 @@
 .portfolio-item {
   right: 0;
-  margin: 0 0 15px;
+  margin: 0 0 .85rem;
 
   .portfolio-link {
     display: flex;
     align-items: center;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
-    max-height: 235px;
+    max-width: 23rem;
+    max-height: 13.5rem;
     overflow: hidden;
   }
 
@@ -32,14 +32,14 @@
       position: absolute;
       top: 50%;
       width: 100%;
-      height: 20px;
-      margin-top: -12px;
+      height: 1.15rem;
+      margin-top: -.7rem;
       text-align: center;
-      font-size: 20px;
+      font-size: 1.15rem;
       color: #fff;
 
       i {
-        margin-top: -12px;
+        margin-top: -.7rem;
       }
       h3,
       h4 {
@@ -50,8 +50,8 @@
 
   .portfolio-caption {
     margin: 0 auto;
-    padding: 25px;
-    max-width: 400px;
+    padding: 1.44rem;
+    max-width: 23rem;
     text-align: center;
     background-color: #fff;
   }
@@ -64,7 +64,7 @@
   .portfolio-caption p {
     margin: 0;
     font-family: $serifFont;
-    font-size: 16px;
+    font-size: 1.1rem;
   }
 }
 
@@ -74,6 +74,6 @@
 
 @media(min-width:767px) {
   .portfolio-item {
-    margin: 0 0 30px;
+    margin: 0 0 1.7rem;
   }
 }

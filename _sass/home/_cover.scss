@@ -14,10 +14,10 @@ header.cover {
     }
 
     .intro-lead-in {
-      margin-bottom: 25px;
+      margin-bottom: 1.44rem;
       font-family: $serifFont;
-      font-size: 22px;
-      line-height: 22px;
+      font-size: 1.25rem;
+      line-height: 1;
       text-transform: lowercase;
       font-style: normal;
       color: color(light-muted);
@@ -27,9 +27,9 @@ header.cover {
       margin-bottom: 0;
       text-transform: uppercase;
       font-family: $primaryFont;
-      font-size: 50px;
+      font-size: 2.9rem;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 1;
       color: color(dance-snow);
 
       > svg {
@@ -51,17 +51,15 @@ header.cover {
 
     .intro-text .intro-lead-in {
       margin-bottom: 25px;
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 2.3rem;
     }
 
     .intro-text .intro-heading {
       margin-bottom: 0;
       text-transform: uppercase;
       font-family: $primaryFont;
-      font-size: 75px;
+      font-size: 4.3rem;
       font-weight: 700;
-      line-height: 75px;
 
       > svg {
         max-width: 12em;
@@ -70,7 +68,7 @@ header.cover {
   }
 
   &.home-cover {
-    background-image: url(/images/cover-jump.png), linear-gradient(to bottom, rgba(0,0,0,.3), transparent 33%), radial-gradient(#FFF, #AAA);
+    background-image: url(/images/cover-green.png), linear-gradient(to bottom, rgba(0,0,0,.3), transparent 33%), radial-gradient(#FFF, #AAA);
   }
 
 

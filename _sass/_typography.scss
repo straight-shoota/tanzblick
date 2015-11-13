@@ -1,7 +1,11 @@
 html,
 body,
 table {
-  font-size: 13pt;
+  font-size: 11pt;
+
+  @media(min-width:768px) {
+    font-size: 13pt;
+  }
   line-height: 1.75;
 }
 
@@ -70,6 +74,8 @@ h6 {
   font-family: $primaryFont;
   font-weight: 700;
   color: color(headings);
+  margin-top: .6rem;
+  margin-bottom: .6rem;
 
   a {
     color: inherit;
@@ -83,6 +89,12 @@ h6 {
   }
 }
 
+h2 {
+  font-size: 1.7rem;
+}
+h3, h4 {
+  font-size: 1.1rem;
+}
 
 
 .btn-primary {
