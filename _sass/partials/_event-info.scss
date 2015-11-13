@@ -1,0 +1,28 @@
+.event-info {
+  background: #2c2cbb;
+  color: #ddd;
+  width: 20em;
+  padding: .5em 1.5em;
+  border-radius: .2em;
+  padding-left: 4em;
+  position: relative;
+
+  > h3 {
+    color: #fff;
+    margin-bottom: .2em;
+  }
+  > .date, > .venue {
+    display: block;
+    line-height: 1.5;
+  }
+  > i {
+    position: absolute;
+    left: 0;
+    margin-top: .5rem;
+    line-height: 1em;
+    width: 4rem;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+  }
+}

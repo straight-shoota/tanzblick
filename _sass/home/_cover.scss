@@ -6,67 +6,6 @@ header.cover {
   background-repeat: no-repeat;
   background-size: contain;
 
-  .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    > .btn-xl {
-      margin-top: 50px;
-    }
-
-    .intro-lead-in {
-      margin-bottom: 1.44rem;
-      font-family: $serifFont;
-      font-size: 1.25rem;
-      line-height: 1;
-      text-transform: lowercase;
-      font-style: normal;
-      color: color(light-muted);
-    }
-
-    .intro-heading {
-      margin-bottom: 0;
-      text-transform: uppercase;
-      font-family: $primaryFont;
-      font-size: 2.9rem;
-      font-weight: 700;
-      line-height: 1;
-      color: color(dance-snow);
-
-      > svg {
-        display: block;
-        margin: auto;
-        max-width: 8em;
-        .tanzblick-blick {
-          fill: color(muted);
-        }
-      }
-    }
-  }
-
-  @media(min-width:768px) {
-    .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-    }
-
-    .intro-text .intro-lead-in {
-      margin-bottom: 25px;
-      font-size: 2.3rem;
-    }
-
-    .intro-text .intro-heading {
-      margin-bottom: 0;
-      text-transform: uppercase;
-      font-family: $primaryFont;
-      font-size: 4.3rem;
-      font-weight: 700;
-
-      > svg {
-        max-width: 12em;
-      }
-    }
-  }
-
   &.home-cover {
     background-image: url(/images/cover-green.png), linear-gradient(to bottom, rgba(0,0,0,.3), transparent 33%), radial-gradient(#FFF, #AAA);
   }
@@ -78,6 +17,76 @@ header.cover {
     .intro-text .intro-heading {
       color: color(dance-snow);
       text-shadow: 0px 0px 1em #333;
+    }
+  }
+}
+
+
+.intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  > .btn-xl {
+    margin-top: 50px;
+  }
+
+  .intro-lead-in {
+    margin-bottom: 1.44rem;
+    font-family: $serifFont;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-transform: lowercase;
+    font-style: normal;
+    color: color(muted);
+
+    .cover & {
+      color: color(light-muted);
+    }
+  }
+
+  .intro-heading {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 1;
+    color: color(dance-blue);
+
+    .cover & {
+      color: color(dance-snow);
+    }
+
+    > svg {
+      display: block;
+      margin: auto;
+      max-width: 8em;
+      .tanzblick-blick {
+        fill: color(muted);
+      }
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .cover .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-size: 2.3rem;
+  }
+
+  .intro-text .intro-heading {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 4.3rem;
+    font-weight: 700;
+
+    > svg {
+      max-width: 12em;
     }
   }
 }
