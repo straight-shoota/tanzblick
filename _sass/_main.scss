@@ -44,7 +44,7 @@ $secondaryFont:  $primaryFont;
 $serifFont: $primaryFont;
 
 @import
-  "partials/**/*";
+  "partials/blend-modes";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
