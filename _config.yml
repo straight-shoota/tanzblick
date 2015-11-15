@@ -20,6 +20,6 @@ port: 4000
 host: 0.0.0.0
 
 # settings for deployment (Rakefile)
-#git:
-#  repo: git@github.com:
-#  branch: master
+git:
+  repo: git@github.com:straight-shoota/tanzblick.git
+  branch: gh-pages
