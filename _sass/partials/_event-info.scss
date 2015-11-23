@@ -26,3 +26,10 @@
     color: #fff;
   }
 }
+.ticket-info {
+  @extend .text-muted;
+
+  font-size: .8em;
+  line-height: 1.2;
+  margin-top: 1.2em;
+}
