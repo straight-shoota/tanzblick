@@ -3,13 +3,14 @@
   margin: 0 0 .85rem;
 
   .portfolio-link {
-    display: flex;
-    align-items: center;
     position: relative;
+    display: block;
+    /*display: flex;
+    align-items: center;
     margin: 0 auto;
     max-width: 23rem;
     max-height: 13.5rem;
-    overflow: hidden;
+    overflow: hidden;*/
   }
 
   .portfolio-hover {
@@ -67,6 +68,7 @@
     font-size: 1.1rem;
     line-height: 1.2;
     margin-top: .3em;
+    min-height: 2.4em;
   }
 
   > img {
