@@ -43,6 +43,11 @@ $serifFont: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 $secondaryFont:  $primaryFont;
 $serifFont: $primaryFont;
 
+$size-xs: 768px;
+$size-sm: $size-xs;
+$size-md: 992px;
+$size-lg: 1200px;
+
 @import
   "partials/blend-modes",
   "partials/event-info";
@@ -54,6 +59,7 @@ $serifFont: $primaryFont;
   "navbar",
   "footer",
   "components",
+  "components/cover",
   "home/cover",
   "home/portfolio",
   "home/timeline"

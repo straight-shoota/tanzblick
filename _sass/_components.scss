@@ -6,8 +6,12 @@
   background-color: #222;
 }
 
-section {
-  padding: 100px 0;
+body > section {
+  padding: 3rem 0;
+
+  @media(min-width:768px) {
+    padding: 6.5rem 0;
+  }
 }
 
 section h2.section-heading {
@@ -24,12 +28,7 @@ section h3.section-subheading {
   font-weight: 400;
 }
 
-@media(min-width:768px) {
-  section {
-    padding: 6.5rem 0;
-  }
-}
-
 #vermittlung p {
   font-size: .8rem;
 }
+

@@ -1,6 +1,7 @@
 .portfolio-item {
   right: 0;
-  margin: 0 0 .85rem;
+  max-width: 25rem;
+  margin: 0 auto .85rem;
 
   .portfolio-link {
     position: relative;
@@ -71,10 +72,10 @@
     min-height: 2.4em;
   }
 
-  > img {
+  /*> img {
     margin: 0 auto;
     max-width: 23rem;
-  }
+  }*/
 }
 
 #projekte * {

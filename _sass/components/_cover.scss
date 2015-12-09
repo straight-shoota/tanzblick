@@ -1,0 +1,111 @@
+.cover {
+  color: color(white);
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media(max-width: $size-xs) {
+    background-position: center 50px;
+
+    .btn-xl {
+      padding: .4em .7em;
+    }
+  }
+
+
+  &.tanz-in-schulen-cover {
+    background-image: url(/images/tanz-in-schulen/siluetten.png), linear-gradient(to bottom, rgba(0,0,0,.3), transparent 33%), radial-gradient(#FFF, #AAA);
+    background-size: contain;
+
+    .intro-text .intro-heading {
+      color: color(dance-snow);
+      text-shadow: 0px 0px 1em #333;
+    }
+  }
+
+  &.cover-display {
+    min-height: 15em;
+    padding: 0 0 45% 0;
+
+    @media(min-width:768px) {
+      min-height: 50em;
+    }
+  }
+}
+
+.intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  > .btn-xl {
+    margin-top: 50px;
+  }
+
+  .intro-lead-in {
+    margin-bottom: 1.44rem;
+    font-family: $serifFont;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-transform: lowercase;
+    font-style: normal;
+    color: color(muted);
+
+    .cover:not(.cover-light) & {
+      color: color(light-muted);
+    }
+  }
+
+  .intro-heading {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 1;
+    color: color(dance-blue);
+
+    .cover:not(.cover-light) & {
+      color: color(dance-snow);
+    }
+
+    > svg {
+      display: block;
+      margin: auto;
+      max-width: 8em;
+      .tanzblick-blick {
+        fill: color(muted);
+      }
+    }
+  }
+}
+
+@media(max-width: $size-xs) {
+  .intro-text {
+    padding-top: 4.5rem;
+    padding-bottom: .75rem;
+  }
+}
+
+@media(min-width:768px) {
+  .cover .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-size: 2.3rem;
+  }
+
+  .cover .intro-text .intro-heading {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 4.3rem;
+    font-weight: 700;
+
+    > svg {
+      max-width: 12em;
+    }
+  }
+}
+
+.cover-title-image {
+  border-radius: .5rem;
+  box-shadow: 0 0 1.8rem rgba(10,10,10,.5);
+}

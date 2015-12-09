@@ -248,3 +248,7 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
+.source {
+  @extend .text-muted;
+}

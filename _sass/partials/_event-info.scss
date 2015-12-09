@@ -1,3 +1,6 @@
+.event-infos {
+  margin-bottom: .7rem;
+}
 .event-info {
   background: #2c2cbb;
   color: #ddd;
@@ -6,6 +9,9 @@
   border-radius: .2em;
   padding-left: 4em;
   position: relative;
+  float: left;
+  margin-right: .7rem;
+  margin-bottom: .7rem;
 
   > h3 {
     color: #fff;
@@ -32,4 +38,16 @@
   font-size: .8em;
   line-height: 1.2;
   margin-top: 1.2em;
+}
+
+
+.past-events {
+  .location {
+    display: block;
+    @extend  .text-muted;
+  }
+
+  > section + section {
+    margin-top: 1.5rem;
+  }
 }
