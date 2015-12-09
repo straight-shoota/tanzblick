@@ -147,6 +147,9 @@ var cbpAnimatedHeader = (function() {
     return window.pageYOffset || docElem.scrollTop;
   }
 
-  init();
+  if(! classie.hasClass(header, 'navbar-shrink')) {
+    // disable on pages where shrink is default
+    init();
+  }
 
 })();

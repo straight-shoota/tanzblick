@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top{% if page.url != '/' %} navbar-shrink{% endif %}">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll test">
@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand page-scroll" href="#page-top">
+      <a class="navbar-brand page-scroll" href="{{ '/#page-top' | prepend: site.baseurl }}">
         {% include logo.svg %}
       </a>
     </div>
