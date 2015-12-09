@@ -63,6 +63,9 @@
     font-weight: 700;
     line-height: 1;
     color: color(dance-blue);
+    @media(max-width: $size-xs) {
+      font-size: 2rem;
+    }
 
     .cover:not(.cover-light) & {
       color: color(dance-snow);
@@ -80,6 +83,9 @@
 }
 
 @media(max-width: $size-xs) {
+  .cover > .container > .row {
+    margin-top: 30px;
+  }
   .intro-text {
     padding-top: 4.5rem;
     padding-bottom: .75rem;

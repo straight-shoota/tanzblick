@@ -1,7 +1,7 @@
 html,
 body,
 table {
-  font-size: 11pt;
+  font-size: 10pt;
 
   @media(min-width:768px) {
     font-size: 13pt;
@@ -93,7 +93,7 @@ h2 {
   font-size: 1.7rem;
 }
 h3, h4 {
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 
@@ -255,5 +255,6 @@ p {
 .img-responsive-width {
   @media(max-width: $size-xs) {
     max-width: 23rem;
+    max-height: 23rem;
   }
 }
