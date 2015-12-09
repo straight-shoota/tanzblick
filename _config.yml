@@ -16,7 +16,7 @@ exclude:
   - 'Rakefile'
 
 # Server settings
-port: 4000
+port: 4010
 host: 0.0.0.0
 
 # settings for deployment (Rakefile)
