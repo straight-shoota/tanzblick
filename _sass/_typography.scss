@@ -234,7 +234,6 @@ a.fa-stack:hover {
     color: color(dance-blue);
     background-color: color(dance-snow);
     border-color: color(dance-blue);
-
   }
 }
 
@@ -251,4 +250,10 @@ p {
 
 .source {
   @extend .text-muted;
+}
+
+.img-responsive-width {
+  @media(max-width: $size-xs) {
+    max-width: 23rem;
+  }
 }
