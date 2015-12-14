@@ -147,6 +147,11 @@ var cbpAnimatedHeader = (function() {
     return window.pageYOffset || docElem.scrollTop;
   }
 
+  if(classie.hasClass(header, 'navbar-shrink') && window.location.pathname == '/'){
+    // remove default shrink on home page
+    classie.remove(header, 'navbar-shrink');
+  }
+
   if(! classie.hasClass(header, 'navbar-shrink')) {
     // disable on pages where shrink is default
     init();
