@@ -90,13 +90,15 @@ layout: default
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading"><em class="tanz">Tanz</em>vermittlung</h2>
-        <h3 class="section-subheading text-muted"></h3>
+        <h3 class="section-subheading text-muted"><a href="{{ '/unterricht' | prepend: site.baseurl }}"  class="btn btn-primary">Aktuelle Kurse</a></h3>
       </div>
     </div>
     <div class="row text-center">
       <div class="col-md-4">
-        <i class="fa fa-bullhorn bullet-icon"></i>
-        <h4 class="service-heading">Unterricht</h4>
+        <a href="{{ '/unterricht' | prepend: site.baseurl }}" class="">
+          <i class="fa fa-bullhorn bullet-icon"></i>
+          <h4 class="service-heading">Unterricht</h4>
+        </a>
         <p class="text-muted">Regulärer Unterricht an verschiedenen Einrichtungen in den Schwerpunkten: Ballett, Moderner Tanz, Tanz- und Bewegungstheater.</p>
       </div>
       <div class="col-md-4">
@@ -111,9 +113,11 @@ layout: default
           <i class="fa fa-circle fa-stack-2x text-primary"></i>
           <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
         </span-->
-        <i class="fa fa-lightbulb-o bullet-icon"></i>
-        <h4 class="service-heading">Workshops</h4>
-        <p class="text-muted"></p>
+        <a href="{{ '/workshops' | prepend: site.baseurl }}" class="">
+          <i class="fa fa-lightbulb-o bullet-icon"></i>
+          <h4 class="service-heading">Workshops</h4>
+        </a>
+        <p class="text-muted">Ballett &amp; Modern Workshops</p>
       </div>
     </div>
   </div>
