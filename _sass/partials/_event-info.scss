@@ -44,14 +44,14 @@
   margin-top: 1.2em;
 }
 
-
 .past-events {
   .location {
     display: block;
     @extend  .text-muted;
   }
 
-  > section + section {
-    margin-top: 1.5rem;
+  > section {
+    margin: 2.3rem 0;
+    border-top: .5em solid #ddd;
   }
 }
