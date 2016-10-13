@@ -34,8 +34,10 @@ layout: default
           <img src="{{ '/changing-room.jpg' | prepend: '/projekte/moving-moods' | prepend: site.baseurl }}" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Moving moods</h4>
-          <p class="text-muted">Ein dreiteiliger Abend für zwei Tänzerinnen</p>
+          <a href="{{ '/projekte/moving-moods' | prepend: site.baseurl }}">
+            <h4>Moving moods</h4>
+            <p class="text-muted">Ein dreiteiliger Abend für zwei Tänzerinnen</p>
+          </a>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -48,12 +50,14 @@ layout: default
           <img src="{{ '/getanzte-vesper_thumb.jpg' | prepend: '/projekte/getanzte-vesper' | prepend: site.baseurl }}" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Getanzte Vesper</h4>
-          <p class="text-muted">Tanz</p>
+          <a href="{{ '/projekte/getanzte-vesper' | prepend: site.baseurl }}">
+            <h4>Getanzte Vesper</h4>
+            <p class="text-muted">Tanz</p>
+          </a>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="{{ '/projekte/feld' | prepend: site.baseurl }}" class="portfolio-link" data-toggle="modal">
+        <a href="{{ '/projekte/feld' | prepend: site.baseurl }}" class="portfolio-link">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
@@ -62,8 +66,10 @@ layout: default
           <img src="{{ '/feld_thumb.jpg' | prepend: '/projekte/feld' | prepend: site.baseurl }}" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Eröffnung „Feld“</h4>
-          <p class="text-muted">Tanz</p>
+          <a href="{{ '/projekte/feld' | prepend: site.baseurl }}">
+            <h4>Eröffnung „Feld“</h4>
+            <p class="text-muted">Tanz</p>
+          </a>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -194,9 +200,7 @@ layout: default
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <h4>Be Part
-                <br>Of Our
-                <br>Story!</h4>
+              {% include logo.svg %}
             </div>
           </li>
         </ul-->
