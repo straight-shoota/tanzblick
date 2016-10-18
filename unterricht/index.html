@@ -58,3 +58,15 @@ title: Unterricht
     </div>
   </div>
 </section>
+
+
+<div class="fotorama"
+    data-nav="thumbs"
+    data-navposition="top"
+    data-width="100%"
+    data-ratio="1920/1080"
+    data-maxheight="100%">
+  {% for i in (2..4) %}
+  <img src="{{ page.path | prepend: site.baseurl }}/images/unterricht-{{ i }}.jpg">
+  {% endfor %}
+</div>
