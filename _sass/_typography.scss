@@ -263,3 +263,10 @@ p {
 li {
   line-height: 1.5;
 }
+
+.subheading {
+  text-transform: none;
+  font-weight: normal;
+  color: color(muted);
+  font-size: 1rem;
+}

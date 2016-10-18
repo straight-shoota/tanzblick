@@ -26,11 +26,6 @@
   &.unterricht-cover {
     background-image: url(/images/unterricht/cover.jpg);
     background-size: contain;
-
-    .intro-text .intro-heading {
-      color: color(dance-snow);
-      text-shadow: 0px 0px 1em #333;
-    }
   }
 
   &.cover-display {
@@ -78,6 +73,9 @@
 
     .cover:not(.cover-light) & {
       color: color(dance-snow);
+    }
+    .cover-light &, .cover-light-img & {
+      color: color(dance-blue);
     }
 
     > svg {
