@@ -132,6 +132,27 @@
   }
 }
 
+/* sub-nav */
+.sub-nav {
+  display: flex;
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+}
+.navbar:not(.navbar-shrink) .sub-nav {
+  display: none;
+}
+.navbar-default .nav :not(.sub-item) > a:nth-last-child(2) {
+  padding-bottom: 5px;
+}
+.navbar-default .nav .sub-item > a {
+  text-transform: none;
+  font-size: .9em;
+  padding: 5px;
+  display: block;
+  color: color(light-muted);
+}
+
 .logo-brand {
   line-height: 1;
   text-transform: none;
