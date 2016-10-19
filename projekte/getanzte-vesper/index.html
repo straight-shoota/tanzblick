@@ -45,28 +45,12 @@ path: /projekte/getanzte-vesper
         <p>Veranstalter sind die Arbeitskreise Citypastoral und Kommunikation der Kirchengemeinde St. Peter und Paul Marburg sowie die Pfarrei St. Elisabeth in Kassel in Kooperation mit dem Seelsorgeamt im bischöflichen Generalvikariat Fulda und <em>tanzblick – freies tanztheater</em>. Der Eintritt ist frei, um eine Spende wird gebeten.</p>
       </div>
       <div class="col-lg-4">
-        <img src="{{ '/flyer-2016-500.jpg' | prepend: '/projekte/getanzte-vesper' | prepend: site.baseurl }}" class="img-rounded">
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <h2>Bisherige Aufführungen</h3>
         <div class="past-events">
-          <section>
-            <h3>2016: Pfingstvesper</h3>
-            <span class="location">13. Mai 2016, Stadtpfarrkirche Fulda</span>
-            <span class="location">16. Mai 2016, St. Peter, Gelnhausen</span>
-
-            <p>An Pfingsten 2016 wurde die getanzte Vesper unter dem Titel <em>Aus dir strömt Leben, Licht und Glut</em>
-            in der Stadtpfarrkirche Fulda (Freitag, 13. Mai) sowie der Pfarrkirche St. Peter Gelnhausen (Pfingstmontag, 16. Mai) aufgeführt. Dieses Projekt entstand in Kooperation mit den beiden Pfarreien und dem Seelsorgeamt des bischöflichen Generalvikariats.</p>
-            <p>
-              <strong>Tanz:</strong> Dorothée Bretz, Laila Clematide, Verena Piwonka<br/>
-              <strong>Orgel:</strong> Prof. H.-J. Kaiser<br/>
-              <strong>Schlagwerk:</strong> Olaf Pyras<br/>
-              <strong>Lichtdesign:</strong> Benedikt Kaiser
-            </p>
-            <a href="{{ '/flyer-2016.pdf' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer downloaden</a>
-          </section>
           <section>
             <h3>2014: Eine getanzte Vesper im Advent</h3>
             <span class="location">6. Dezember 2014, Stadtpfarrkirche Fulda</span>
@@ -86,18 +70,8 @@ path: /projekte/getanzte-vesper
         <h3>Pressestimmen:</h3>
         <ul class="press-items">
           <li>
-            <a href="http://osthessen-news.de/n11531093/getanzte-vesper-verk%C3%BCndet-die-pfingstbotschaft.html">
-              „Getanzte Vesper“ verkündet die Pfingstbotschaft <span class="source">(19. April 2016, osthessen-news.de)</span>
-            </a>
-          </li>
-          <li>
             <a href="http://www.fuldaer-nachrichten.de/?p=104928&print=1">
               Kunst und Kirche – „Getanzte Vesper“ verkündet die Adventsbotschaft <span class="source">(13. Dezember 2012, fuldaer-nachrichten.de)</span>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.bistum-fulda.de/bistum_fulda/presse_medien/liste_pressemeldungen/2016/2016_02/bpd_2016_4/bpd_20160425_01_getanzte_Vesper.php">
-              „Aus dir strömt Leben, Licht und Glut“ &ndash; „Getanzte Vesper“ zu Pfingsten in Fulda und Gelnhausen <span class="source">(25. April 2016, bistum-fulda.de)</span>
             </a>
           </li>
           <li>
@@ -122,8 +96,79 @@ path: /projekte/getanzte-vesper
     data-width="100%"
     data-ratio="1920/1080"
     data-maxheight="100%">
-  {% for i in (1..16) %}
+  <img src="{{ '/getanzte-vesper.jpg' | prepend: page.path | prepend: site.baseurl }}" />
+  {% for i in (1..6) %}
+  <img src="{{ page.path | prepend: site.baseurl }}/images/adventsvesper-2012-{{ i }}.jpg">
+  {% endfor %}
+  {% for i in (1..5) %}
+  <img src="{{ page.path | prepend: site.baseurl }}/images/adventsvesper-2014-{{ i }}.jpg">
+  {% endfor %}
+</div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Pfingstvesper</h2>
+        <h3 class="section-subheading text-muted">Getanzte Vesper zu Pfingsten</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Bisherige Aufführungen</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="past-events">
+          <section>
+            <h3>2016: Pfingstvesper</h3>
+            <span class="location">13. Mai 2016, Stadtpfarrkirche Fulda</span>
+            <span class="location">16. Mai 2016, St. Peter, Gelnhausen</span>
+
+            <p>An Pfingsten 2016 wurde die getanzte Vesper unter dem Titel <em>Aus dir strömt Leben, Licht und Glut</em>
+            in der Stadtpfarrkirche Fulda (Freitag, 13. Mai) sowie der Pfarrkirche St. Peter Gelnhausen (Pfingstmontag, 16. Mai) aufgeführt. Dieses Projekt entstand in Kooperation mit den beiden Pfarreien und dem Seelsorgeamt des bischöflichen Generalvikariats.</p>
+            <p>
+              <strong>Tanz:</strong> Dorothée Bretz, Laila Clematide, Verena Piwonka<br/>
+              <strong>Orgel:</strong> Prof. H.-J. Kaiser<br/>
+              <strong>Schlagwerk:</strong> Olaf Pyras<br/>
+              <strong>Lichtdesign:</strong> Benedikt Kaiser
+            </p>
+            <a href="{{ '/flyer-2016.pdf' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer downloaden</a>
+          </section>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <img src="{{ '/flyer-2016-500.jpg' | prepend: '/projekte/getanzte-vesper' | prepend: site.baseurl }}" class="img-rounded">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Pressestimmen:</h3>
+        <ul class="press-items">
+          <li>
+            <a href="http://osthessen-news.de/n11531093/getanzte-vesper-verk%C3%BCndet-die-pfingstbotschaft.html">
+              „Getanzte Vesper“ verkündet die Pfingstbotschaft <span class="source">(19. April 2016, osthessen-news.de)</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.bistum-fulda.de/bistum_fulda/presse_medien/liste_pressemeldungen/2016/2016_02/bpd_2016_4/bpd_20160425_01_getanzte_Vesper.php">
+              „Aus dir strömt Leben, Licht und Glut“ &ndash; „Getanzte Vesper“ zu Pfingsten in Fulda und Gelnhausen <span class="source">(25. April 2016, bistum-fulda.de)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fotorama"
+    data-nav="thumbs"
+    data-navposition="top"
+    data-width="100%"
+    data-ratio="1920/1080"
+    data-maxheight="100%">
+  {% for i in (1..27) %}
   <img src="{{ page.path | prepend: site.baseurl }}/images/getanzte-vesper-2016-{{ i }}.jpg">
   {% endfor %}
-  <img src="{{ '/getanzte-vesper.jpg' | prepend: page.path | prepend: site.baseurl }}" />
 </div>
