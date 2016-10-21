@@ -97,7 +97,7 @@ path: /projekte/getanzte-vesper
     data-ratio="1920/1080"
     data-maxheight="100%">
   <img src="{{ '/getanzte-vesper.jpg' | prepend: page.path | prepend: site.baseurl }}" />
-  {% for i in (1..6) %}
+  {% for i in (1..7) %}
   <img src="{{ page.path | prepend: site.baseurl }}/images/adventsvesper-2012-{{ i }}.jpg">
   {% endfor %}
   {% for i in (1..5) %}
@@ -168,7 +168,10 @@ path: /projekte/getanzte-vesper
     data-width="100%"
     data-ratio="1920/1080"
     data-maxheight="100%">
-  {% for i in (1..27) %}
+  {% for i in (1..22) %}
   <img src="{{ page.path | prepend: site.baseurl }}/images/getanzte-vesper-2016-{{ i }}.jpg">
+  {% endfor %}
+  {% for i in (1..2) %}
+  <img src="{{ page.path | prepend: site.baseurl }}/images/pfingstvesper-2016-{{ i }}.jpg">
   {% endfor %}
 </div>
