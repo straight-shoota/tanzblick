@@ -67,6 +67,7 @@
   background-color: color(primary);
   > img {
     transform: scale(1.01); // fix border pixels
+    width: 100%;
   }
 }
 
