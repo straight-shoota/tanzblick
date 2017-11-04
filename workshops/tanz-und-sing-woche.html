@@ -3,11 +3,11 @@ layout: default
 title: Tanz- und Singwoche
 path: /workshops/tanz-und-sing-woche
 ---
-<section class="cover cover-light-img" style="background-image: url('{{ '/tanz-und-singwoche-cover.jpg' | prepend: '/../images' | prepend: page.path | prepend: site.baseurl }}');">
+<section class="cover cover-light-img" style="background-image: url('{{ '/tanz-und-singwoche-cover.jpg' | prepend: '/../images' | prepend: page.path | relative_url }}');">
   <div class="container" itemscope itemtype="http://schema.org/Event">
     <div class="row">
       <div class="col-xs-4">
-        <img src="{{ '/Plate_2_of_The_Happy_Prince_and_Other_Tales_(1888).png' | prepend: '/../images' | prepend: page.path | prepend: site.baseurl }}" itemprop="image" class="cover-title-image">
+        <img src="{{ '/Plate_2_of_The_Happy_Prince_and_Other_Tales_(1888).png' | prepend: '/../images' | prepend: page.path | relative_url }}" itemprop="image" class="cover-title-image">
       </div>
       <div class="col-xs-8">
         <div class="intro-text">

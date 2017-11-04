@@ -4,11 +4,11 @@ title: Getanzte Vesper
 permalink: /projekte/getanzte-vesper/index.html
 path: /projekte/getanzte-vesper
 ---
-<section class="cover" style="background-image: url('{{ '/cover.jpg' | prepend: page.path | prepend: site.baseurl }}');">
+<section class="cover" style="background-image: url('{{ '/cover.jpg' | prepend: page.path | relative_url }}');">
   <div class="container" itemscope itemtype="http://schema.org/TheaterEvent">
     <div class="row">
       <div class="col-xs-4">
-        <img src="{{ '/title.jpg' | prepend: page.path | prepend: site.baseurl }}" itemprop="image" class="cover-title-image">
+        <img src="{{ '/title.jpg' | prepend: page.path | relative_url }}" itemprop="image" class="cover-title-image">
       </div>
       <div class="col-xs-8">
         <div class="intro-text">
@@ -44,9 +44,9 @@ path: /projekte/getanzte-vesper
         <p>Im Dezember 2016 wurde in zwei Kirchen des Bistums Fulda ein außergewöhnliches Abgendgebet aufgeführt, eine <em>getanzte Vesper im Advent</em>. Unter dem Leitwort „Wie schön leucht’ uns der Morgenstern“ wurde eine liturgische Vesper gestaltet, in die Musik, Bild, Sprache, Tanz und Licht einfließen. Die getanzte Vesper versteht sich als besondere  Anregung zu Gedanken und Gebeten im Advent.</p>
         <p>Veranstalter sind die Arbeitskreise Citypastoral und Kommunikation der Kirchengemeinde St. Peter und Paul Marburg sowie die Pfarrei St. Elisabeth in Kassel in Kooperation mit dem Seelsorgeamt im bischöflichen Generalvikariat Fulda und <em>tanzblick – freies tanztheater</em>. Der Eintritt ist frei, um eine Spende wird gebeten.</p>
 
-        <a href="{{ '/getanzte-vesper-2016-marburg.pdf' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer Marburg</a>
+        <a href="{{ '/getanzte-vesper-2016-marburg.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Marburg</a>
 
-        <a href="{{ '/getanzte-vesper-2016-kassel.jpg' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer Kassel</a>
+        <a href="{{ '/getanzte-vesper-2016-kassel.jpg' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Kassel</a>
       </div>
       <div class="col-lg-4">
       </div>
@@ -60,7 +60,7 @@ path: /projekte/getanzte-vesper
             <span class="location">6. Dezember 2014, Stadtpfarrkirche Fulda</span>
             <span class="location">7. Dezember 2014, St. Peter, Gelnhausen</span>
 
-            <a href="{{ '/flyer-2014.pdf' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer downloaden</a>
+            <a href="{{ '/flyer-2014.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
           </section>
           <section>
             <h3>2012: Eine getanzte Vesper im Advent</h3>
@@ -100,12 +100,12 @@ path: /projekte/getanzte-vesper
     data-width="100%"
     data-ratio="1920/1080"
     data-maxheight="100%">
-  <img src="{{ '/getanzte-vesper.jpg' | prepend: page.path | prepend: site.baseurl }}" />
+  <img src="{{ '/getanzte-vesper.jpg' | prepend: page.path | relative_url }}" />
   {% for i in (1..7) %}
-  <img src="{{ page.path | prepend: site.baseurl }}/images/adventsvesper-2012-{{ i }}.jpg">
+  <img src="{{ page.path | relative_url }}/images/adventsvesper-2012-{{ i }}.jpg">
   {% endfor %}
   {% for i in (1..5) %}
-  <img src="{{ page.path | prepend: site.baseurl }}/images/adventsvesper-2014-{{ i }}.jpg">
+  <img src="{{ page.path | relative_url }}/images/adventsvesper-2014-{{ i }}.jpg">
   {% endfor %}
 </div>
 
@@ -138,12 +138,12 @@ path: /projekte/getanzte-vesper
               <strong>Schlagwerk:</strong> Olaf Pyras<br/>
               <strong>Lichtdesign:</strong> Benedikt Kaiser
             </p>
-            <a href="{{ '/flyer-2016.pdf' | prepend: page.path | prepend: site.baseurl }}" class="btn btn-primary">Flyer downloaden</a>
+            <a href="{{ '/flyer-2016.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
           </section>
         </div>
       </div>
       <div class="col-lg-4">
-        <img src="{{ '/flyer-2016-500.jpg' | prepend: '/projekte/getanzte-vesper' | prepend: site.baseurl }}" class="img-rounded">
+        <img src="{{ '/flyer-2016-500.jpg' | prepend: '/projekte/getanzte-vesper' | relative_url }}" class="img-rounded">
       </div>
     </div>
     <div class="row">
@@ -173,9 +173,9 @@ path: /projekte/getanzte-vesper
     data-ratio="1920/1080"
     data-maxheight="100%">
   {% for i in (1..22) %}
-  <img src="{{ page.path | prepend: site.baseurl }}/images/getanzte-vesper-2016-{{ i }}.jpg">
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
   {% endfor %}
   {% for i in (1..3) %}
-  <img src="{{ page.path | prepend: site.baseurl }}/images/pfingstvesper-2016-{{ i }}.jpg">
+  <img src="{{ page.path | relative_url }}/images/pfingstvesper-2016-{{ i }}.jpg">
   {% endfor %}
 </div>

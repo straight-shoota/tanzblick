@@ -18,7 +18,7 @@ path: /workshops
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <h3><a href="{{ page.path | prepend: site.baseurl }}/tanz-und-sing-woche">Tanz- und Singwoche</a></h3>
+        <h3><a href="{{ page.path | relative_url }}/tanz-und-sing-woche">Tanz- und Singwoche</a></h3>
         <h4 class="subheading">6 &ndash; 12 Jahre</h4>
         <div class="event-infos clearfix">
           <div class="event-info">
@@ -28,10 +28,10 @@ path: /workshops
           </div>
         </div>
         <p>In einem musikalisch-szenischem Singspiel nach Oscar Wildes Märchen <em>Der eigensüchtige Riese</em> wollen wir singen, spielen, tanzen und musizieren. In eigens eingeteilten Chor-und Tanzzeiten kann altersgerecht kreiert werden, bevor wir alles gemeinsam zu einem Großen und Ganzen zusammen basteln und inszenieren.</p>
-        <a href="{{ page.path | prepend: site.baseurl }}/tanz-und-sing-woche">mehr</a>
+        <a href="{{ page.path | relative_url }}/tanz-und-sing-woche">mehr</a>
       </div>
       <div class="col-lg-4">
-        <img src="{{ '/Plate_2_of_The_Happy_Prince_and_Other_Tales_(1888).png' | prepend: '/images' | prepend: page.path | prepend: site.baseurl }}" itemprop="image" class="cover-title-image">
+        <img src="{{ '/Plate_2_of_The_Happy_Prince_and_Other_Tales_(1888).png' | prepend: '/images' | prepend: page.path | relative_url }}" itemprop="image" class="cover-title-image">
       </div>
     </div>
     <div class="row">

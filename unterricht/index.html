@@ -26,7 +26,7 @@ path: /unterricht
         <a href="{{ site.baseurl }}/workshops">Siehe auch Workshops</a>
       </div>
       <div class="col-lg-4">
-        <img src="{{ page.path | prepend: site.baseurl }}/images/unterricht-4.jpg" class="img-rounded">
+        <img src="{{ page.path | relative_url }}/images/unterricht-4.jpg" class="img-rounded">
       </div>
     </div>
   </div>
@@ -75,11 +75,11 @@ path: /unterricht
         <p>Alle Kurse finden in der Gymnastikhalle der Antonius-von-Padua-Schule, Carl-Schurz-Str. 22, Fulda, statt.</p>
         <p>Anmeldung bei der <a href="http://vhsfulda.de">Volkshochschule der Stadt Fulda</a>: <a href="mailto:vhs@fulda.de">vhs@fulda.de</a> oder telefonisch: 0661/ 102-1477 oder -1474</p>
         <p><strong>Kursleitung:</strong> Dorothée Bretz (Diplombühnentänzerin, Tanzpädagogin, Diplomsportlehrerin)</p>
-        <a href="{{ '/2016-09-01 Flyer Kinderbalett.pdf' | prepend: '/unterricht' | prepend: site.baseurl }}" class="btn btn-primary">Flyer downloaden</a>
+        <a href="{{ '/2016-09-01 Flyer Kinderbalett.pdf' | prepend: '/unterricht' | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
         <p></p>
       </div>
       <div class="col-lg-4">
-        <img src="{{ page.path | prepend: site.baseurl }}/images/unterricht-beziehung.jpg" class="img-rounded">
+        <img src="{{ page.path | relative_url }}/images/unterricht-beziehung.jpg" class="img-rounded">
       </div>
     </div>
   </div>
@@ -179,6 +179,6 @@ path: /unterricht
     data-ratio="1920/1080"
     data-maxheight="100%">
   {% for i in (2..4) %}
-  <img src="{{ page.path | prepend: site.baseurl }}/images/unterricht-{{ i }}.jpg">
+  <img src="{{ page.path | relative_url }}/images/unterricht-{{ i }}.jpg">
   {% endfor %}
 </div>

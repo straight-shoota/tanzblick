@@ -4,11 +4,11 @@ title: Eröffnung „Feld“
 permalink: /projekte/feld/index.html
 path: /projekte/feld
 ---
-<section class="cover" style="background-image: url('{{ '/cover.jpg' | prepend: page.path | prepend: site.baseurl }}');">
+<section class="cover" style="background-image: url('{{ '/cover.jpg' | prepend: page.path | relative_url }}');">
   <div class="container" itemscope itemtype="http://schema.org/TheaterEvent">
     <div class="row">
       <div class="col-md-6 col-xs-4">
-        <img src="{{ '/feld.jpg' | prepend: page.path | prepend: site.baseurl }}" itemprop="image" class="cover-title-image">
+        <img src="{{ '/feld.jpg' | prepend: page.path | relative_url }}" itemprop="image" class="cover-title-image">
       </div>
       <div class="col-md-6 col-xs-8">
         <div class="intro-text">
