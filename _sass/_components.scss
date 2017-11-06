@@ -36,3 +36,6 @@ section h3.section-subheading {
   margin: 1.6rem auto;
   background-color: #111;
 }
+.row + .row {
+  margin-top: 1.5em;
+}

@@ -116,6 +116,9 @@
       max-width: 12em;
     }
   }
+  .navbar + .cover {
+    padding: 4rem 0 1rem;
+  }
 }
 
 .cover-title-image {
