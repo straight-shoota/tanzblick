@@ -172,7 +172,10 @@ path: /projekte/getanzte-vesper
     data-width="100%"
     data-ratio="1920/1080"
     data-maxheight="100%">
-  {% for i in (1..22) %}
+  {% for i in (1..3) %}
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
+  {% endfor %}
+  {% for i in (5..22) %}
   <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
   {% endfor %}
   {% for i in (1..3) %}

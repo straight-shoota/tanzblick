@@ -25,12 +25,12 @@ permalink: /projekte/spur/
             <time class="date" itemprop="startDate" datetime="2018-02-24 20:00">Sa, 24. Feb 2018 20:00 Uhr</time>
             <span class="venue" itemprop="location">KUZ Kreuz, Fulda</span>
           </div>
-          <div class="event-info">
+          <!--div class="event-info">
             <i class="fa fa-calendar-o"></i>
             <h3>Sonntag Morgen</h3>
             <time class="date" itemprop="startDate" datetime="2018-02-25 11:30">So, 25. Feb 2018 11:30 Uhr</time>
             <span class="venue" itemprop="location">KUZ Kreuz, Fulda</span>
-          </div>
+          </div-->
           <div class="event-info">
             <i class="fa fa-calendar-o"></i>
             <h3>Sonntag Nachmittag</h3>
@@ -49,50 +49,56 @@ permalink: /projekte/spur/
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <p>
-          Das Stück, mit dem Titel <strong>SPUR – ein Tanztheaterkonzert</strong>, recherchiert, exploriert und er-“spürt“ auf vielfältige Weise, wie sich tänzerisch, musikalisch Spuren legen, verwischen, lesen und verfolgen lassen.</p>
-          <p>Die Zuschauer dürfen wie Detektive von Anfang an verfolgen, wie Spuren in die Irre führen oder zu ganz unerwartetem Ziel. Sie können sich mitamüsieren, über die banalen Alltagspuren, die jeder kennt und lieber nicht findet, wie benutzte, liegengelassene Socken, Spuren, die man täglich zu beseitigen versucht und die sich doch immer wieder aufdrängen.</p>
-          <p>Wir erleben, wie schwer es ist – einmal eingespurt – sich auf eine neue Spur setzen zu lassen und wie atemlos uns die ständig geforderte Mehrspurigkeit unseres Lebens macht. Und kommt es nicht einer persönlichen Katastrophe gleich, die eventuell richtig wichtige, heiße Spur zu verpassen, bzw. diese im Spurenwirrwarr überhaupt erst ausfindig zu machen?</p>
-          <p>Es wird eine Welt betreten, in der Hoffen – „endlich die Spur gefunden“, Bangen – „letzte Spur?“, Gefühlschaos – „Spur der Verwüstung“, bis hin zu einem „spurlosen Verschwinden“, Spannung und innere Beteiligung garantieren.</p>
+        <p>SPUR – ein Tanztheaterkonzert, recherchiert, exploriert und er-„spürt“ auf vielfältige Weise, wie sich tänzerisch, musikalisch Spuren legen, verwischen, lesen und verfolgen lassen.</p>
+        <p>SPUR: In vier Szenen versteckt sie sich, springt sie uns an, lockt sie uns, verflüchtigt sie sich, führt sie in die Irre oder zu ganz unerwartetem Ziel.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-8">
+        <p>Jeder kennt den täglichen Kampf die banalen Alltagspuren zu beseitigen. Wer mag sie finden, die liegengelassenen Socken, das benutzte Taschentuch oder die ersten grauen Haare? Es bleibt nur die Wahl zwischen Wahnsinn oder Ignoranz, Verdrängen oder Spiel. </p>
+        <p>Wie schwer ist doch – einmal eingespurt – sich auf eine neue Spur setzen zu lassen. Wie atemlos macht uns die ständig geforderte Mehrspurigkeit unseres Lebens. Und kommt es nicht einer persönlichen Katastrophe gleich, die eventuell richtig wichtige, heiße Spur zu verpassen, bzw. diese im Spurenwirrwarr überhaupt erst ausfindig zu machen? </p>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <img src="{{ 'images/tanz-und-gong_medium.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6 col-lg-4">
-        <img src="{{ 'socke-hand_medium.jpg' | prepend: '/projekte/spur/images/' | relative_url }}" class="img-rounded">
+        <img src="{{ 'images/socke-hand_medium.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
       <div class="col-sm-6 col-lg-8">
-        <p>Jede Szene hinterlässt Spuren im Bühnenraum, so dass am Ende des Stückes alle Spuren zurückverfolgt werden können.</p>
-        <p>Stilistisch fließen verschiedene Mittel des Tanztheaters und Bewegungstheaters ebenso wie der Musik und des Gesangs mit ein. Dabei verschmelzen die Grenzen zwischen Bewegung und Klang. Klang ist Bewegung. Bewegung ist Klang.
-        Auf die Spur gesetzt?</p>
+        <p>Es wird eine Welt betreten, in der Hoffen – „endlich die Spur gefunden“, Bangen – „letzte Spur?“, Gefühlschaos – „Spur der Verwüstung“, bis hin zu einem „spurlosen Verschwinden“, Spannung und innere Beteiligung garantieren.</p>
+        <p>Stilistisch fließen verschiedene Mittel des Tanztheaters und Bewegungstheaters ebenso wie der Musik und des Gesangs mit ein. Dabei verschmelzen die Grenzen zwischen Bewegung und Klang. Klang ist Bewegung. Bewegung ist Klang.</p>
+        <p>Eine spannende Suche – oder eher Flucht – verspricht diese Tanz-Klang-Performance.</p>
       </div>
     </div>
-    <div class="row">
+    <!--div class="row">
       <div class="col-lg-12">
-        <a href="{{ '/flyer.pdf' | prepend: page.permalink | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
+        <a href="{{ 'flyer.pdf' | prepend: page.permalink | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
       </div>
-    </div>
+    </div-->
   </div>
 </section>
 
-<section class="cover" class="parallax-window" data-parallax="scroll" data-image-src="/projekte/spur/images/socke.jpg" >
+<section class="cover" class="parallax-window" data-parallax="scroll" data-image-src="{{ 'images/socke.jpg' | prepend: page.permalink | relative_url }}" >
 </section>
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <img src="{{ 'wurf.jpg' | prepend: '/projekte/spur/images/' | relative_url }}" class="img-rounded">
+        <img src="{{ 'images/wurf.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4">
-        <img src="{{ 'sprung_medium.jpg' | prepend: '/projekte/spur/images/' | relative_url }}" class="img-rounded">
+        <img src="{{ 'images/sprung_medium.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
       <div class="col-xs-4">
-        <img src="{{ 'spritz_medium.jpg' | prepend: '/projekte/spur/images/' | relative_url }}" class="img-rounded">
+        <img src="{{ 'images/spritz_medium.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
       <div class="col-xs-4">
-        <img src="{{ 'wrap_medium.jpg' | prepend: '/projekte/spur/images/' | relative_url }}" class="img-rounded">
+        <img src="{{ 'images/wrap_medium.jpg' | prepend: page.permalink | relative_url }}" class="img-rounded">
       </div>
     </div>
   </div>
@@ -107,13 +113,18 @@ permalink: /projekte/spur/
     </div>
 
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-sm-12 text-center">
+        <img src="{{ 'images/künstlerinnen.jpg' | prepend: page.permalink | relative_url }}" style="max-height: 20em;" class="img-rounded img-responsive-width">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
         <p>
-          <strong>Dorothée Bretz</strong> absolvierte ihr Studium für Bühnentanz an der Hochschule für Musik und Darstellende Kunst in Frankfurt und für Spiel-Musik-Tanz/ Bewegungstheater, Tanzpädagogik und -improvisation an der Deutschen Sporthochschule Köln, sowie Physical Theatre an der Desmond Jones School for Mime, London. Sie erhielt Engagements an der Frankfurter Oper, Eternia Danstheater Schweden und der Xaris Dance Company internat., bei der sie auch Laila Clematide und Deborah Smith-Wicke kennenlernte und auch selbst anfing zu choreographieren. Kunstübergreifende Projekte zu entwickeln, reizt sie besonders wie z.B. bei der multimedialen Tanz- und Theaterproduktion „Vrijgekocht“ in den Niederlanden oder der „Getanzten Vesper im Advent“ hier in Fulda. Sie unterrichtet Tanz in Schulen und gibt Workshops im In- und Ausland. 2013 gründete sie tanzblick Freies Tanztheater als einen Schritt Tanztheater und zeitgenössischen Tanz in der Region mehr sichtbar werden zu lassen.
+          <strong>Dorothée Bretz</strong> absolvierte ihr Studium für Bühnentanz an der Hochschule für Musik und Darstellende Kunst in Frankfurt und für Spiel-Musik-Tanz/ Bewegungstheater, Tanzpädagogik und -improvisation an der Deutschen Sporthochschule Köln, sowie Physical Theatre an der Desmond Jones School for Mime, London. Sie erhielt Engagements an der Frankfurter Oper, Eternia Danstheater Schweden und der Xaris Dance Company internat., bei der sie anfing eigene Choreographien zu entwickeln. Kunstübergreifende Projekte reizen sie besonders wie z.B. bei der multimedialen Tanz- und Theaterproduktion „Vrijgekocht“ in den Niederlanden oder der „Getanzten Vesper im Advent“ hier in Fulda. Sie unterrichtet Tanz in Schulen und gibt Workshops im In- und Ausland. 2013 gründete sie tanzblick Freies Tanztheater.
         </p>
       </div>
-      <div class="col-lg-4 text-center">
-        <img src="{{ '/dorothee-bretz.jpg' | prepend: '/images/person' | relative_url }}" style="max-height: 20em;" class="img-rounded img-responsive-width">
+      <div class="col-md6">
+        <p><strong>Alexandra Pesold</strong> studierte an der Universität „Mozarteum“ Salzburg und absolvierte mit Mag. Art. für Musik und Tanz. Seit vielen Jahren beschäftigt sie sich intensiv mit Gesang, Klang und Musik aus verschiedenen Kulturen und Epochen. Ihre Freude am Gestalten entfaltet sich in der Verbindung von Stimme, Bewegung und Klang und dem Zusammenspiel von Komposition und Improvisation. Mit dem internationalen Obertonvokalensemble „Harmonic Connection“ gastierte sie u.a. in Deutschland, Tschechien und Österreich. Als Solistin und in Ensembles konzertiert sie deutschlandweit und unterrichtet u.a. bei den Fuldaer Chören am Dom.</p>
       </div>
     </div>
   </div>
@@ -122,12 +133,9 @@ permalink: /projekte/spur/
 <section class="bg-light-gray">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
-        <p><strong>Alexandra Pesold</strong></p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <img src="{{ '' | prepend: '/projekte/spur' | relative_url }}" class="img-rounded img-responsive-width">
-      </div>
+      <!--div class="col-lg-4 text-center">
+        <img src="{{ '/alexandra-pesold.jpg' | prepend: '/projekte/spur' | relative_url }}" class="img-rounded img-responsive-width">
+      </div-->
     </div>
   </div>
 </section>
