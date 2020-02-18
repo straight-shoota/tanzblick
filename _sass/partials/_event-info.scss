@@ -35,6 +35,10 @@
     font-size: 2em;
     color: #fff;
   }
+
+  a {
+    color: inherit;
+  }
 }
 .ticket-info {
   @extend .text-muted;

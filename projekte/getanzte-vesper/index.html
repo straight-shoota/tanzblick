@@ -19,15 +19,21 @@ path: /projekte/getanzte-vesper
         <div class="event-infos clearfix">
           <div class="event-info">
             <i class="fa fa-calendar-o"></i>
-            <h3>Adventsvesper</h3>
-            <time class="date" itemprop="startDate" datetime="2016-12-10 18:00">Sa, 10. Dez. 2016 18:00 Uhr</time>
-            <span class="venue" itemprop="location">St. Peter und Paul, Marburg</span>
+            <h3>Pfingstvesper</h3>
+            <time class="date" itemprop="startDate" datetime="2020-04-23 19:30">Do, 23. April 2020 19:30 Uhr</time>
+            <span class="venue" itemprop="location">Stadtpfarrkirche, Fulda</span>
           </div>
           <div class="event-info">
             <i class="fa fa-calendar-o"></i>
-            <h3>Adventsvesper</h3>
-            <time class="date" itemprop="startDate" datetime="2016-12-11 16:30">So, 11. Dez. 2016 16:30 Uhr</time>
-            <span class="venue" itemprop="location">St. Elisabeth, Kassel</span>
+            <h3>Pfingstvesper</h3>
+            <time class="date" itemprop="startDate" datetime="2020-04-24 19:30">Fr, 24. April 2020 19:30 Uhr</time>
+            <span class="venue" itemprop="location">Mariae Namen, Hanau</span>
+          </div>
+          <div class="event-info">
+            <i class="fa fa-calendar-o"></i>
+            <h3>Pfingstvesper</h3>
+            <time class="date" itemprop="startDate" datetime="2020-04-25 19:30">Fr, 25. April 2020 19:30 Uhr</time>
+            <span class="venue" itemprop="location">Elisabethkirche, Marburg</span>
           </div>
         </div>
 
@@ -44,9 +50,6 @@ path: /projekte/getanzte-vesper
         <p>Im Dezember 2016 wurde in zwei Kirchen des Bistums Fulda ein außergewöhnliches Abgendgebet aufgeführt, eine <em>getanzte Vesper im Advent</em>. Unter dem Leitwort „Wie schön leucht’ uns der Morgenstern“ wurde eine liturgische Vesper gestaltet, in die Musik, Bild, Sprache, Tanz und Licht einfließen. Die getanzte Vesper versteht sich als besondere  Anregung zu Gedanken und Gebeten im Advent.</p>
         <p>Veranstalter sind die Arbeitskreise Citypastoral und Kommunikation der Kirchengemeinde St. Peter und Paul Marburg sowie die Pfarrei St. Elisabeth in Kassel in Kooperation mit dem Seelsorgeamt im bischöflichen Generalvikariat Fulda und <em>tanzblick – freies tanztheater</em>. Der Eintritt ist frei, um eine Spende wird gebeten.</p>
 
-        <a href="{{ '/getanzte-vesper-2016-marburg.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Marburg</a>
-
-        <a href="{{ '/getanzte-vesper-2016-kassel.jpg' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Kassel</a>
       </div>
       <div class="col-lg-4">
       </div>
@@ -56,11 +59,27 @@ path: /projekte/getanzte-vesper
         <h2>Bisherige Aufführungen</h3>
         <div class="past-events">
           <section>
+            <h3>2016: Eine getanzte Vesper im Advent</h3>
+            <span class="location">
+              <time class="date" itemprop="startDate" datetime="2016-12-10 18:00">Sa, 10. Dez. 2016 18:00 Uhr</time>,
+              <span class="venue" itemprop="location">St. Peter und Paul, Marburg</span>
+            </span>
+            <span class="location">
+              <time class="date" itemprop="startDate" datetime="2016-12-11 16:30">So, 11. Dez. 2016 16:30 Uhr</time>,
+              <span class="venue" itemprop="location">St. Elisabeth, Kassel</span>
+            </span>
+
+            <a href="{{ '/getanzte-vesper-2016-marburg.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Marburg</a>
+
+            <a href="{{ '/getanzte-vesper-2016-kassel.jpg' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer Kassel</a>
+          </section>
+
+          <section>
             <h3>2014: Eine getanzte Vesper im Advent</h3>
             <span class="location">6. Dezember 2014, Stadtpfarrkirche Fulda</span>
             <span class="location">7. Dezember 2014, St. Peter, Gelnhausen</span>
 
-            <a href="{{ '/flyer-2014.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer downloaden</a>
+            <a href="{{ '/flyer-2014.pdf' | prepend: page.path | relative_url }}" class="btn btn-primary">Flyer</a>
           </section>
           <section>
             <h3>2012: Eine getanzte Vesper im Advent</h3>
@@ -172,10 +191,18 @@ path: /projekte/getanzte-vesper
     data-width="100%"
     data-ratio="1920/1080"
     data-maxheight="100%">
-  {% for i in (1..3) %}
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-1.jpg">
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-3.jpg">
+  {% for i in (5..6) %}
   <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
   {% endfor %}
-  {% for i in (5..22) %}
+  {% for i in (8..11) %}
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
+  {% endfor %}
+  {% for i in (13..16) %}
+  <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
+  {% endfor %}
+  {% for i in (19..22) %}
   <img src="{{ page.path | relative_url }}/images/getanzte-vesper-2016-{{ i }}.jpg">
   {% endfor %}
   {% for i in (1..3) %}
