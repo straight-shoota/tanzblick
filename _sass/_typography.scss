@@ -263,6 +263,12 @@ p {
   }
 }
 
+.img-cover {
+  aspect-ratio: 1.4;
+  object-fit: cover;
+  width: 100%;
+}
+
 li {
   line-height: 1.5;
 }
